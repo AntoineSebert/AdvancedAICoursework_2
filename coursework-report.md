@@ -8,7 +8,7 @@ Aberdeen, UK
 
 ## Abstract
 
-This electronic document is a “live” template and already defines the components of your submission [title, text, heads, etc.] in its style sheet. **CRITICAL:  Do Not Use Symbols, Special Characters, or Math in Paper Title or Abstract*. Use the abstract to indicate at a very high level what you set out to achieve in your coursework and your key finding. This should not be more than 5 sentences or so.**
+This paper aims to address the problem of explainable systems in artificial intelligence. Since the domain's applications become more numerous and present in people's lives as the technology matures, the need for explainable systems is emerging, for both ethical and legal concerns. Of course, it is not possible nor desirable to deploy on a large scale a product based on a technology that is not fully understood, especially in areas where a high level of reliability and confidence is necessary. For that purpose, we first conduct a comparative study on three machine learning algorithms using the [Python language](https://www.python.org/) and the [ScikitLearn library](https://scikit-learn.org/stable/). Then we define and address the aims of the concept of Explainable Artificial Intelligence, and finally, we discuss the ethical concerns about Artificial Intelligence in general, in connection with existing ethics philosophies.
 
 ### ACM classifiers
 
@@ -16,53 +16,19 @@ This electronic document is a “live” template and already defines the compon
 • Computing methodologies~Machine learning algorithms
 • Social and professional topics~Codes of ethics
 
-## Table of contents
+## Comparative Study using ScikitLearn
 
-* [Comparative Study using ScikitLearn](#I. Comparative Study using ScikitLearn)
-* [Explainable AI (XAI)](#II. Explainable AI (XAI))
-  * [Overview of explainable XAI](#Overview of explainable XAI)
-  * [Legal, ethical and Social implications of XAI](#Legal, ethical and Social implications of XAI)
-  * [Explainability and Transparency on chosen algorithms](#Explainability and Transparency on chosen algorithms)
-* [Ethical AI](#III. Ethical AI)
-  * [Foreword](#Foreword)
-    * [Artificial Intelligence](#Artificial Intelligence)
-    * [Ethics](#Ethics)
-      * [General definitions](#General definitions)
-      * [Consequentialism](#Consequentialism)
-      * [Eudemonism](#Eudemonism)
-      * [Deontological ethics](#Deontological ethics)
-      * [Link with AI](#Link with AI)
-  * [AI problems sorted by their causes](#AI problems sorted by their causes)
-    * [Design](#Design)
-    * [Decision](#Decision)
-    * [Context](#Context)
-    * [Training](#Training)
-  * [Solutions](#Solutions)
-  * [Conclusions](#Conclusions)
-* [References](#References)
+*Unfortunately this section could not be covered due to lack of time.*
 
-## I. Comparative Study using ScikitLearn
+### CART
 
-Introduce the selected algorithms and datasets, and specify why you have selected them.  If there are any interesting aspects of your chosen datasets you can state them here. Also state details relevant to the chosen evaluation methodology from scikitLearn. Detail the text pre-processing pipeline used; here you may refer to key code snippets as needed. It might help to have a figure. 
+### k-Nearest Neighbors search with Ball Tree
 
-Make sure to:
-- explain your evaluation strategy and the pipeline that was used to convertthe text data into a vector form; and
-- explain your results
+### Multilayer Perceptron with Stochastic Gradient Descent
 
-The goal is to analyse a collection of text documents and build a text classiffer. You will need to use sciktlearn and nltk to extract feature vectors suitable for machine learning and train models to perform text classiffcation. You can also use a grid search strategy to find a good configuration of both the feature extraction components and the classifier. You should select 2 datasets from the the list provided. You need to select 3 algorithms from the sciktlearn library; two of which must be an Artificial Neural Net and the k-Nearest Neighbour (kNN). The third can be one of your own
-choices from the sciktlearn library (e.g. Naive Bayes, Support Vector Machines, Decision Trees). It is important that you select and organise your training and test sets appropriately using cross-validation.
+## Explainable AI (XAI)
 
-Proposed candidate datasets listed below:
-- Movie reviews
-- Spam Dataset
-- 20 Newsgroups
-Task (weight 3): Maximum one page (including references) which needs to be organised as follows:
-- explain your evaluation strategy and the pipeline that was used to convert the text data into a vector form; and
-- present and interpret your results.
-
-## II. Explainable AI (XAI)
-
-### A. Overview of explainable XAI
+### Overview of explainable XAI
 
 Explainable AI are artificial systems that mimic human intelligence and are based on transparency, a highly desirable characteristic by the way, so as to make the decisions and the processes that lead to those understandable by humans [^Gunning 2017]. It is on the opposite of the black box approach of artificial systems such as traditional machine learning algorithms, that moreover does not ensure trust towards AI.
 
@@ -77,7 +43,7 @@ The *Five Goals of Explainability* sum up all the challenges of the domain [^Sam
 - Relevance
 - Learning
 
-### B. Legal, ethical and Social implications of XAI
+### Legal, ethical and Social implications of XAI
 
 Since the artificial neural networks, the most common solutions to solve complex artificial intelligence problems, currently operate as black boxes, the main challenge is to invent or adapt algorithms and frameworks that enforce transparency by making the decision process more understandable and predictable. Even if progress has been made to "demystify" their operation [^Olden & Jackson 2002][^Benítez, Castro, Requena 1997], the existence of a gap in theoretical research concerning the behavior of ANN is a serious drawback to their ethical utilization.
 
@@ -88,25 +54,56 @@ This is an even larger concern when XAI is employed in sensitive fields such as:
 
 In every case, the system must also be able to explain a decision afterward, in order to provide a key of comprehension in the event of a problem or concern about the decision [^Core et al. 2006]. Further research is also needed in that particular area to create common explanable model or model architecture.
 
-### C. Explainability and Transparency on chosen algorithms
+### Explainability and Transparency on chosen algorithms
 
-https://scikit-learn.org/stable/supervised_learning.html
+#### CART
 
-#### Decision Tree with C5.0
+The CART algorithm produces either classification or regression trees, depending on whether the dependent variable. The trees are formed by a set of rules based on the dataset model [^Breiman et al. 1984]. It is mainly used in data mining.
 
-...
+##### Advantages
 
-#### Nearest Neighbors with Ball Tre
+- Based on simple conditional statements, they are easily understandable, even by non-technicians. A graphical representation might also be used to help the comprehension
+- Close to the human decision-making process, which makes CART more transparent to inspection and potentially able to model human interactions
+- A decision from a situation can be fully justified by the internal boolean logic behind it
+- Can be demonstrated with statistical tests, a way to ensure the reliability of the system
 
-...
-http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.91.8209
+##### Limitations
 
-#### Multi-layer Perceptron with Stochastic Gradient Descent
+- Decision trees are very sensitive to changes, especially near the root
+- Learners can create over-complex trees, really hard to read and understand for a human
 
-...
-https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+Since its invention, CART has been modified or adapted to fit in specific purpose or remove/reduce its drawbacks [^Rutkowski et al. 2014][^Crawford 1989].
 
-## III. Ethical AI
+#### k-Nearest Neighbors search with Ball Tree
+
+The Ball tree aims to solve the problems of the K-D tree algorithm, itself meant to find a better approach than brute-force [^Omohundro 1989]. It organizes points in a multi-dimensional space, partitioning them into hyperspheres ("balls").
+
+In k-NN classification, the output is a class membership. An element is classified regarding the most common class among its k nearest neighbors[^Altman 1992].
+
+##### Advantages
+
+- The graphical representation is easy to understand and visualize, non-experts included
+
+##### Limitations
+
+- The validation of the results with a confusion matrix or statistical methods is not trivial to represent [^Ming 2017]
+- Explainability might not be an evidence if the dataset is too sparse (too few neighbors)
+
+#### Multilayer Perceptron with Stochastic Gradient Descent
+
+MLP is a class of feedforward artificial neural network, constituted of layers of nodes (input layer, hidden layer(s), output layer) [^White & Rosenblatt 1963]. It is widely used in machine learning, especially in deep learning; backpropagation makes MLP a very good choice.
+
+##### Advantages
+
+- Transparent neural networks are yet to discover (open research field), progress has been made towards this goal [^Marino, Wickramasinghe & Manic 2018][^Sánchez & Villar 2008]
+
+##### Limitations
+
+- The learning process is opaque by nature, computation or modification of the model is necessary to get more understandable results
+- It is impossible to know the classifier's confidence about the results since neural networks are not probabilistic
+- Artificial neural networks structure is similar to biologic neural networks structure, but their operation is not the same, even if bridges can be found [^ann vs bnn].
+
+## Ethical AI
 
 ### Foreword
 
@@ -128,7 +125,7 @@ The ethics (from the ancient Greek *ἦθος*: "accustomed place, custom, habit
 
 ##### Consequentialism
 
-The consequences of an action are an important aspect of it (it is the basis of experimentation, important in the learning process). These consequences can then be considered as relevant criteria to applies norms to behaviors. In that case, a decision is considered as good if the ensuing repercussions are a benefit. The ground of the evaluation is moved to the observable world rather than the system's internal logic. But that means that in order to state whether the actions of such systems are good or bad, we first need to define was is beneficial or not. For example, if an AI drives a car, and by a traffic, hazard have to choose whether to kill a child or an elderly, what to decide? [^Anscombe 1985]
+The consequences of an action are an important aspect of it (it is the basis of experimentation, important in the learning process). These consequences can then be considered as relevant criteria to applies norms to behaviors. In that case, a decision is considered as good if the ensuing repercussions are a benefit. The ground of the evaluation is moved to the observable world rather than the system's internal logic. But that means that in order to state whether the actions of such systems are good or bad, we first need to define was is beneficial or not [^Anscombe 1985]. For example, if an AI drives a car, and by a traffic, hazard have to choose whether to kill a child or an elderly, what to decide? 
 
 ##### Eudemonism
 
@@ -136,7 +133,7 @@ Eudemonism (from the ancient Greek *εὐδαιμονία*: beatitude) state tha
 
 ##### Deontological ethics
 
-Kantian ethics has been described as deontological, that is to say, it considers action in itself and duty or moral obligation, independently of any empirical circumstance of action. It therefore also opposes the [consequentialism](#consequentialism), which estimates the moral value of the action according to the foreseeable consequences thereof. Because of the absolute imperative nature of the notion of duty, and the unnecessary connection between happiness and morality, the Kantian position has often been described as rigorous [^Kant 1781; Kant 1788].
+Kantian ethics has been described as deontological, that is to say, it considers action in itself and duty or moral obligation, independently of any empirical circumstance of action. It therefore also opposes the [consequentialism](#consequentialism), which estimates the moral value of the action according to the foreseeable consequences thereof. Because of the absolute imperative nature of the notion of duty, and the unnecessary connection between happiness and morality, the Kantian position has often been described as rigorous [^Kant 1781][^Kant 1788].
 
 ##### Link with AI
 
@@ -223,14 +220,23 @@ Further research and popular consultation must be done on the subject, especiall
 [^Swain & Hauska 1977]: Swain, P. H. and Hauska, H. (1977) ‘The decision tree classifier: Design and potential’, IEEE Transactions on Geoscience Electronics. doi: 10.1109/TGE.1977.6498972.
 [^Friedman, Geiger & Goldszmidt 1997]: Friedman, N., Geiger, D. and Goldszmidt, M. (1997) ‘Bayesian Network Classifiers’, Machine Learning. doi: 10.1023/A:1007465528199.
 [^Friedman, Nachman & Peér 1999]: Friedman, N., Nachman, I. and Peér, D. (1999) ‘Learning bayesian network structure from massive datasets: the "sparse candidate" algorithm’, in Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence, pp. 206–215.
-
+[^Breiman et al. 1984]: Breiman, L. et al. (1984) ‘Classification and regression trees’, Wadsworth International Group.
+[^Rutkowski et al. 2014]: Rutkowski, L. et al. (2014) ‘The CART decision tree for mining data streams’, Information Sciences. doi: 10.1016/j.ins.2013.12.060.
+[^Crawford 1989]: Crawford, S. L. (1989) ‘Extensions to the CART algorithm’, International Journal of Man-Ma: chine Studies. doi: 10.1016/0020-7373(89)90027-8.
+[^Omohundro 1989]: Omohundro, S. M. (1989) ‘Five Balltree Construction Algorithms’, Bulletin of Mathematical Biology. doi: 10.1016/S0092-8240(89)80047-3.
+[^Altman 1992]: Altman, N. S. (1992) ‘An introduction to kernel and nearest-neighbor nonparametric regression’, American Statistician. doi: 10.1080/00031305.1992.10475879.
+[^Ming 2017]: Ming, Y. A. O. (2017) ‘A survey on visualization for explainable classifiers’.
+[^White & Rosenblatt 1963]: White, B. W. and Rosenblatt, F. (1963) ‘Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms’, The American Journal of Psychology. doi: 10.2307/1419730.
+[^Marino, Wickramasinghe & Manic 2018]: Marino, D. L., Wickramasinghe, C. S. and Manic, M. (2018) ‘An Adversarial Approach for Explainable AI in Intrusion Detection Systems’, arXiv preprint arXiv:1811.11705.
+[^Sánchez & Villar 2008]: Sánchez, L. and Villar, J. R. (2008) ‘Obtaining transparent models of chaotic systems with multi-objective simulated annealing algorithms’, Information Sciences. doi: 10.1016/j.ins.2007.09.029.
+[^ann vs bnn]: https://towardsdatascience.com/the-differences-between-artificial-and-biological-neural-networks-a8b46db828b7
 [^Anscombe 1985]: G.E.M. Anscombe, "Modern Moral Philosophy", Philosophy n°33, pp. 1-19, 1958
 [^Spinoza 1677]: B. Spinoza, "Ethica", 1677
 [^Kant 1781]: E. Kant, "Critique of Pure Reason", 1781
 [^Kant 1788]: E. Kant, "Critique of Practical Reason", 1788
 [^amazon]: https://www.entrepreneur.com/video/287281
 [^volkswagen]: http://time.com/3944181/robot-kills-man-volkswagen-plant/
-[bigdog_funding]: https://www.bostondynamics.com/bigdog "see the "About BigDog " section"
+[^bigdog_funding]: https://www.bostondynamics.com/bigdog "see the "About BigDog " section"
 [^Bostrom 2003]: Bostrom, N. (2003) ‘Ethical issues in advanced artificial intelligence’, in Cognitive, Emotive and Ethical Aspects of Decision Making in Humans and Artificial Intelligence. doi: 10.1016/B0-12-227240-4/00064-2.
 [^Goodstadt 2005]: Goodstadt, L. F. (2005) Uneasy partners: The conflict between public interest and private profit in Hong Kong. Hong Kong University Press.
 [^chabot]: https://www.technologyreview.com/s/601897/tougher-turing-test-exposes-chatbots-stupidity/
