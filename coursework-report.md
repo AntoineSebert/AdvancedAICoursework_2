@@ -1,9 +1,11 @@
-# CM4107 Coursework #2
+# CM4107 Coursework #2 : Explainable Artificial Intelligence
 
 Anthony Sébert
 
 School of Computing Science and Digital Media
-RGU
+
+Robert Gordon University
+
 Aberdeen, UK
 
 ## Abstract
