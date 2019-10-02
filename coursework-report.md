@@ -13,7 +13,9 @@ This paper aims to address the problem of explainable systems in artificial inte
 ### ACM classifiers
 
 • **Computing methodologies~Artificial intelligence**
+
 • Computing methodologies~Machine learning algorithms
+
 • Social and professional topics~Codes of ethics
 
 ## Comparative Study using ScikitLearn
@@ -210,50 +212,97 @@ Further research and popular consultation must be done on the subject, especiall
 ## References
 
 [^Gunning 2017]: Gunning, D. (2017) ‘Explainable artificial intelligence (xai)’, Defense Advanced Research Projects Agency (DARPA), nd Web.
+
 [^Chander 2016]: Chander, A. (2016) ‘The racist algorithm’, Mich. L. Rev. HeinOnline, 115, p. 1023.
+
 [^Samek, Wiegand, Müller 2017]: Samek, W., Wiegand, T. and Müller, K.-R. (2017) ‘Explainable artificial intelligence: Understanding, visualizing and interpreting deep learning models’, arXiv preprint arXiv:1708.08296.
+
 [^Olden & Jackson 2002]: Olden, J. D. and Jackson, D. A. (2002) ‘Illuminating the “black box”: A randomization approach for understanding variable contributions in artificial neural networks’, Ecological Modelling. doi: 10.1016/S0304-3800(02)00064-9.
+
 [^Benítez, Castro, Requena 1997]: Benítez, J. M., Castro, J. L. and Requena, I. (1997) ‘Are artificial neural networks black boxes?’, IEEE Transactions on Neural Networks. doi: 10.1109/72.623216.
+
 [^Core et al. 2006]: Core, M. G. et al. (2006) ‘Building explainable artificial intelligence systems’, Proceedings of the National Conference on Artificial Intelligence. doi: 10.4172/2155-9600.1000731.
+
 [^Freund & Schapire 1997]: Freund, Y. and Schapire, R. E. (1997) ‘A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting’, Journal of Computer and System Sciences. doi: 10.1006/jcss.1997.1504.
+
 [^Kégl 2013]: Kégl, B. (2013) ‘The return of AdaBoost. MH: multi-class Hamming trees’, arXiv preprint arXiv:1312.6086.
+
 [^Swain & Hauska 1977]: Swain, P. H. and Hauska, H. (1977) ‘The decision tree classifier: Design and potential’, IEEE Transactions on Geoscience Electronics. doi: 10.1109/TGE.1977.6498972.
+
 [^Friedman, Geiger & Goldszmidt 1997]: Friedman, N., Geiger, D. and Goldszmidt, M. (1997) ‘Bayesian Network Classifiers’, Machine Learning. doi: 10.1023/A:1007465528199.
+
 [^Friedman, Nachman & Peér 1999]: Friedman, N., Nachman, I. and Peér, D. (1999) ‘Learning bayesian network structure from massive datasets: the "sparse candidate" algorithm’, in Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence, pp. 206–215.
+
 [^Breiman et al. 1984]: Breiman, L. et al. (1984) ‘Classification and regression trees’, Wadsworth International Group.
+
 [^Rutkowski et al. 2014]: Rutkowski, L. et al. (2014) ‘The CART decision tree for mining data streams’, Information Sciences. doi: 10.1016/j.ins.2013.12.060.
+
 [^Crawford 1989]: Crawford, S. L. (1989) ‘Extensions to the CART algorithm’, International Journal of Man-Ma: chine Studies. doi: 10.1016/0020-7373(89)90027-8.
+
 [^Omohundro 1989]: Omohundro, S. M. (1989) ‘Five Balltree Construction Algorithms’, Bulletin of Mathematical Biology. doi: 10.1016/S0092-8240(89)80047-3.
+
 [^Altman 1992]: Altman, N. S. (1992) ‘An introduction to kernel and nearest-neighbor nonparametric regression’, American Statistician. doi: 10.1080/00031305.1992.10475879.
+
 [^Ming 2017]: Ming, Y. A. O. (2017) ‘A survey on visualization for explainable classifiers’.
+
 [^White & Rosenblatt 1963]: White, B. W. and Rosenblatt, F. (1963) ‘Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms’, The American Journal of Psychology. doi: 10.2307/1419730.
+
 [^Marino, Wickramasinghe & Manic 2018]: Marino, D. L., Wickramasinghe, C. S. and Manic, M. (2018) ‘An Adversarial Approach for Explainable AI in Intrusion Detection Systems’, arXiv preprint arXiv:1811.11705.
+
 [^Sánchez & Villar 2008]: Sánchez, L. and Villar, J. R. (2008) ‘Obtaining transparent models of chaotic systems with multi-objective simulated annealing algorithms’, Information Sciences. doi: 10.1016/j.ins.2007.09.029.
+
 [^ann vs bnn]: https://towardsdatascience.com/the-differences-between-artificial-and-biological-neural-networks-a8b46db828b7
+
 [^Anscombe 1985]: G.E.M. Anscombe, "Modern Moral Philosophy", Philosophy n°33, pp. 1-19, 1958
+
 [^Spinoza 1677]: B. Spinoza, "Ethica", 1677
+
 [^Kant 1781]: E. Kant, "Critique of Pure Reason", 1781
+
 [^Kant 1788]: E. Kant, "Critique of Practical Reason", 1788
+
 [^amazon]: https://www.entrepreneur.com/video/287281
+
 [^volkswagen]: http://time.com/3944181/robot-kills-man-volkswagen-plant/
+
 [^bigdog_funding]: https://www.bostondynamics.com/bigdog "see the "About BigDog " section"
+
 [^Bostrom 2003]: Bostrom, N. (2003) ‘Ethical issues in advanced artificial intelligence’, in Cognitive, Emotive and Ethical Aspects of Decision Making in Humans and Artificial Intelligence. doi: 10.1016/B0-12-227240-4/00064-2.
+
 [^Goodstadt 2005]: Goodstadt, L. F. (2005) Uneasy partners: The conflict between public interest and private profit in Hong Kong. Hong Kong University Press.
+
 [^chabot]: https://www.technologyreview.com/s/601897/tougher-turing-test-exposes-chatbots-stupidity/
+
 [^Bostrom & Yudkowsky 2011]: Bostrom, N. and Yudkowsky, E. (2014) ‘The ethics of artificial intelligence’, The Cambridge handbook of artificial intelligence. Cambridge University Press Cambridge, 316, p. 334.
+
 [^tesla]: https://www.theguardian.com/technology/2016/jul/01/tesla-driver-killed-autopilot-self-driving-car-harry-potter
+
 [^biaised_ai]: https://medium.com/moral-robots/racist-ai-d067f79b044
+
 [^elite]: http://www.kotaku.co.uk/2016/06/03/elites-ai-created-super-weapons-and-started-hunting-players-skynet-is-here
+
 [^microsoft]: https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/
+
 [^Yudkowsky 2002]: http://yudkowsky.net/singularity/aibox/
+
 [^google]: https://www.huffingtonpost.co.uk/entry/google-black-people-goril_n_7717008?guccounter=1&guce_referrer_us=aHR0cHM6Ly9kem9uZS5jb20v&guce_referrer_cs=OTDqV7nGEP2T73s0rnIKiQ
+
 [^Simon & Shen 1994]: Shen, W.-M. and Simon, H. A. (1994) ‘Autonomous learning from the environment’, in WH Freeman and Company.
+
 [^Caliskan, Bryson & Narayanan 2017]: Caliskan, A., Bryson, J. J. and Narayanan, A. (2017) ‘Semantics derived automatically from language corpora contain human-like biases’, Science. doi: 10.1126/science.aal4230.
+
 [^Bostrom 2017]: Bostrom, N. (2017) Superintelligence. Dunod.
+
 [^runaround]: Asimov, I. (1942) ‘Runaround’, Astounding Science Fiction, 29(1), pp. 94–103.
+
 [^i_robot]: Asimov, I. (2004) I, robot. Spectra.
+
 [^Boden et al 2017]: Boden, M. et al. (2017) ‘Principles of robotics: regulating robots in the real world’, Connection Science. Taylor & Francis, 29(2), pp. 124–129. doi: 10.1080/09540091.2016.1271400.
+
 [^Russel et al 2015]: Russell, S., Dewey, D. and Tegmark, M. (2015) ‘Research priorities for robust and beneficial artificial intelligence’, Ai Magazine, 36(4), pp. 105–114.
+
 [^Powers 2011]: Powers, T. M. (2011) ‘Prospects for a Kantian machine’, in Machine Ethics. doi: 10.1017/CBO9780511978036.027.
+
 [^Lenman 2000]: Lenman, J. (2000), Consequentialism and Cluelessness. Philosophy & Public Affairs, 29: 342-370. doi:10.1111/j.1088-4963.2000.00342.x
+
 [^Bryson, Diamantis & Grant 2017]: Joanna J. Bryson, Mihailis E. Diamantis, and Thomas D. Grant, Of, For, and By the People: The Legal Lacuna of Synthetic Persons. Artificial Intelligence and Law 25(3):273{291 [Sep 2017]
